@@ -23,10 +23,10 @@ from pyrogram.types import (InlineQueryResultArticle, InputTextMessageContent,
                             InlineKeyboardMarkup, InlineKeyboardButton, InlineQueryResultPhoto)
 
 
-api_id = 23780487
-api_hash = "8e756a529aa577d1ae33859476ca4bf5"
-bot_token = "7086463608:AAGa6jm-8vsrh2SI9x2bv2kzMlhChdNPHik"
-allowed_user_id = 283212689
+api_id = *
+api_hash = "*"
+bot_token = "*"
+allowed_user_id = *
 
 app = Client(
     "infor_bot",
@@ -120,7 +120,7 @@ def change_info(conn_project, cursor_project, user_id, column, new_value):
         print(f"User with ID {user_id} {column} changed to {new_value} successfully.")
     except Exception as e:
         print("Error changing user info:", e)
-conn_project = psycopg2.connect(database="fyd", user="postgres", password="your_password", host="localhost", port="5432")
+conn_project = *
 cursor_project = conn_project.cursor() 
 @app.on_message(filters.command("start"))
 def start_command(client, message):
